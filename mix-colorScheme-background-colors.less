@@ -1,0 +1,55 @@
+// create a background color colorScheme for a specific class. Example see bellow
+// so instead of adding the classes "bg c0 a colorScheme" to your DOM element you can 
+// generate this specially for your custom CSS 
+// needs the class name and the shade(a-j) (all existing shades could be found in the var-collorCodes.less)
+.bg-colorScheme(@className, @shade) {
+
+    .-(@i: 1) when (@i <= length(@color-names)) {
+        @name: e(extract(@color-names, @i));
+        @code: e(extract(@color-codes, @i));
+
+        @var-color-current: "@{code}-@{shade}";
+        .colorScheme.@{name} @{className} {
+            background-color:  @@var-color-current;
+        }
+        .-((@i + 1));
+    } .-;
+}
+
+// Example:
+//
+// Use the mising like: .bg-colorScheme(~".foo .bar", ~"a"); will generated:
+//
+//.colorScheme.gray .foo .bar {
+//    background-color: #f4f8fb;
+//}
+//.colorScheme.yellow .foo .bar {
+//    background-color: #fcf9cd;
+//}
+//.colorScheme.orange .foo .bar {
+//    background-color: #faf1d4;
+//}
+//.colorScheme.red .foo .bar {
+//    background-color: #f9e6e4;
+//}
+//.colorScheme.purple .foo .bar {
+//    background-color: #efe8fc;
+//}
+//.colorScheme.midBlue .foo .bar {
+//    background-color: #edf5f9;
+//}
+//.colorScheme.lightBlue .foo .bar {
+//    background-color: #e8f7fc;
+//}
+//.colorScheme.turquoise .foo .bar {
+//    background-color: #e1faf7;
+//}
+//.colorScheme.midGreen .foo .bar {
+//    background-color: #e2f5df;
+//}
+//.colorScheme.lightGreen .foo .bar {
+//    background-color: #ecf5d5;
+//}
+//.colorScheme.blueGreen .foo .bar {
+//    background-color: #e1f0e9;
+//}
