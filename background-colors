@@ -1,0 +1,449 @@
+@import 'colorCodes';
+// TODO replace all color codes with the varaibles
+.bg {
+    background-color: @c0;
+}
+.colorScheme.gray .colorScheme.bg,
+.bg.c0 {
+  background-color: @c0-a;
+}
+.colorScheme.gray .colorScheme.bg.a,
+.bg.c0.a {
+  background-color: @c0-a;
+}
+.colorScheme.gray .colorScheme.bg.b,
+.bg.c0.b {
+  background-color: @c0-b;
+}
+.colorScheme.gray .colorScheme.bg.c,
+.bg.c0.c {
+  background-color: @c0-c;
+}
+.colorScheme.gray .colorScheme.bg.d,
+.bg.c0.d {
+  background-color: @c0-d;
+}
+.colorScheme.gray .colorScheme.bg.e,
+.bg.c0.e {
+  background-color: @c0-e;
+}
+.colorScheme.gray .colorScheme.bg.f,
+.bg.c0.f {
+  background-color: @c0-f;
+}
+.colorScheme.gray .colorScheme.bg.g,
+.bg.c0.g {
+  background-color: @c0-g;
+}
+.colorScheme.gray .colorScheme.bg.h,
+.bg.c0.h {
+  background-color: @c0-h;
+}
+.colorScheme.gray .colorScheme.bg.i,
+.bg.c0.i {
+  background-color: @c0-i;
+}
+.colorScheme.gray .colorScheme.bg.j,
+.bg.c0.j {
+  background-color: @c0-j;
+}
+.colorScheme.yellow .colorScheme.bg.a,
+.bg.c1.a {
+  background-color: #fcf9cd;
+}
+.colorScheme.yellow .colorScheme.bg.b,
+.bg.c1.b {
+  background-color: #fff489;
+}
+.colorScheme.yellow .colorScheme.bg.c,
+.bg.c1.c {
+  background-color: #ffea55;
+}
+.colorScheme.yellow .colorScheme.bg.d,
+.bg.c1.d {
+  background-color: #ffd522;
+}
+.colorScheme.yellow .colorScheme.bg.e,
+.bg.c1.e {
+  background-color: #ffc60b;
+}
+.colorScheme.yellow .colorScheme.bg.f,
+.bg.c1.f {
+  background-color: #ffaf02;
+}
+.colorScheme.yellow .colorScheme.bg.g,
+.bg.c1.g {
+  background-color: #f49906;
+}
+.colorScheme.yellow .colorScheme.bg.h,
+.bg.c1.h {
+  background-color: #e5841c;
+}
+.colorScheme.yellow .colorScheme.bg.i,
+.bg.c1.i {
+  background-color: #d46c04;
+}
+.colorScheme.yellow .colorScheme.bg.j,
+.bg.c1.j {
+  background-color: #a85414;
+}
+.colorScheme.orange .colorScheme.bg.a,
+.bg.c2.a {
+  background-color: #faf1d4;
+}
+.colorScheme.orange .colorScheme.bg.b,
+.bg.c2.b {
+  background-color: #ffd37c;
+}
+.colorScheme.orange .colorScheme.bg.c,
+.bg.c2.c {
+  background-color: #ffba5a;
+}
+.colorScheme.orange .colorScheme.bg.d,
+.bg.c2.d {
+  background-color: #faa125;
+}
+.colorScheme.orange .colorScheme.bg.e,
+.bg.c2.e {
+  background-color: #f7911b;
+}
+.colorScheme.orange .colorScheme.bg.f,
+.bg.c2.f {
+  background-color: #ed7600;
+}
+.colorScheme.orange .colorScheme.bg.g,
+.bg.c2.g {
+  background-color: #e36600;
+}
+.colorScheme.orange .colorScheme.bg.h,
+.bg.c2.h {
+  background-color: #c95004;
+}
+.colorScheme.orange .colorScheme.bg.i,
+.bg.c2.i {
+  background-color: #b53b07;
+}
+.colorScheme.orange .colorScheme.bg.j,
+.bg.c2.j {
+  background-color: #933414;
+}
+.colorScheme.red .colorScheme.bg.a,
+.bg.c3.a {
+  background-color: #f9e6e4;
+}
+.colorScheme.red .colorScheme.bg.b,
+.bg.c3.b {
+  background-color: #f7c1bc;
+}
+.colorScheme.red .colorScheme.bg.c,
+.bg.c3.c {
+  background-color: #f2a59e;
+}
+.colorScheme.red .colorScheme.bg.d,
+.bg.c3.d {
+  background-color: #ed6868;
+}
+.colorScheme.red .colorScheme.bg.e,
+.bg.c3.e {
+  background-color: #e63434;
+}
+.colorScheme.red .colorScheme.bg.f,
+.bg.c3.f {
+  background-color: #ce2830;
+}
+.colorScheme.red .colorScheme.bg.g,
+.bg.c3.g {
+  background-color: #bc111a;
+}
+.colorScheme.red .colorScheme.bg.h,
+.bg.c3.h {
+  background-color: #931117;
+}
+.colorScheme.red .colorScheme.bg.i,
+.bg.c3.i {
+  background-color: #700f1c;
+}
+.colorScheme.red .colorScheme.bg.j,
+.bg.c3.j {
+  background-color: #510a13;
+}
+.colorScheme.purple .colorScheme.bg.a,
+.bg.c4.a {
+  background-color: #efe8fc;
+}
+.colorScheme.purple .colorScheme.bg.b,
+.bg.c4.b {
+  background-color: #e3d5ff;
+}
+.colorScheme.purple .colorScheme.bg.c,
+.bg.c4.c {
+  background-color: #cfbdf4;
+}
+.colorScheme.purple .colorScheme.bg.d,
+.bg.c4.d {
+  background-color: #af96fa;
+}
+.colorScheme.purple .colorScheme.bg.e,
+.bg.c4.e {
+  background-color: #8c70e0;
+}
+.colorScheme.purple .colorScheme.bg.f,
+.bg.c4.f {
+  background-color: #7963ba;
+}
+.colorScheme.purple .colorScheme.bg.g,
+.bg.c4.g {
+  background-color: #614aa5;
+}
+.colorScheme.purple .colorScheme.bg.h,
+.bg.c4.h {
+  background-color: #402987;
+}
+.colorScheme.purple .colorScheme.bg.i,
+.bg.c4.i {
+  background-color: #2c2163;
+}
+.colorScheme.purple .colorScheme.bg.j,
+.bg.c4.j {
+  background-color: #1d163f;
+}
+.colorScheme.midBlue .colorScheme.bg.a,
+.bg.c5.a {
+  background-color: #edf5f9;
+}
+.colorScheme.midBlue .colorScheme.bg.b,
+.bg.c5.b {
+  background-color: #bce4f7;
+}
+.colorScheme.midBlue .colorScheme.bg.c,
+.bg.c5.c {
+  background-color: #89c3e0;
+}
+.colorScheme.midBlue .colorScheme.bg.d,
+.bg.c5.d {
+  background-color: #61a4d4;
+}
+.colorScheme.midBlue .colorScheme.bg.e,
+.bg.c5.e {
+  background-color: #3f88d1;
+}
+.colorScheme.midBlue .colorScheme.bg.f,
+.bg.c5.f {
+  background-color: #246db5;
+}
+.colorScheme.midBlue .colorScheme.bg.g,
+.bg.c5.g {
+  background-color: #165f9b;
+}
+.colorScheme.midBlue .colorScheme.bg.h,
+.bg.c5.h {
+  background-color: #03407c;
+}
+.colorScheme.midBlue .colorScheme.bg.i,
+.bg.c5.i {
+  background-color: #032d56;
+}
+.colorScheme.midBlue .colorScheme.bg.j,
+.bg.c5.j {
+  background-color: #011b2d;
+}
+.colorScheme.lightBlue .colorScheme.bg.a,
+.bg.c6.a {
+  background-color: #e8f7fc;
+}
+.colorScheme.lightBlue .colorScheme.bg.b,
+.bg.c6.b {
+  background-color: #cff3ff;
+}
+.colorScheme.lightBlue .colorScheme.bg.c,
+.bg.c6.c {
+  background-color: #9ee1f7;
+}
+.colorScheme.lightBlue .colorScheme.bg.d,
+.bg.c6.d {
+  background-color: #78d2f5;
+}
+.colorScheme.lightBlue .colorScheme.bg.e,
+.bg.c6.e {
+  background-color: #3eb7f4;
+}
+.colorScheme.lightBlue .colorScheme.bg.f,
+.bg.c6.f {
+  background-color: #0999e1;
+}
+.colorScheme.lightBlue .colorScheme.bg.g,
+.bg.c6.g {
+  background-color: #0a86c4;
+}
+.colorScheme.lightBlue .colorScheme.bg.h,
+.bg.c6.h {
+  background-color: #0871a6;
+}
+.colorScheme.lightBlue .colorScheme.bg.i,
+.bg.c6.i {
+  background-color: #06537a;
+}
+.colorScheme.lightBlue .colorScheme.bg.j,
+.bg.c6.j {
+  background-color: #04364f;
+}
+.colorScheme.turquoise .colorScheme.bg.a,
+.bg.c7.a {
+  background-color: #e1faf7;
+}
+.colorScheme.turquoise .colorScheme.bg.b,
+.bg.c7.b {
+  background-color: #bdfff8;
+}
+.colorScheme.turquoise .colorScheme.bg.c,
+.bg.c7.c {
+  background-color: #99f7ee;
+}
+.colorScheme.turquoise .colorScheme.bg.d,
+.bg.c7.d {
+  background-color: #68ede0;
+}
+.colorScheme.turquoise .colorScheme.bg.e,
+.bg.c7.e {
+  background-color: #3ae0db;
+}
+.colorScheme.turquoise .colorScheme.bg.f,
+.bg.c7.f {
+  background-color: #08ccc5;
+}
+.colorScheme.turquoise .colorScheme.bg.g,
+.bg.c7.g {
+  background-color: #04b0aa;
+}
+.colorScheme.turquoise .colorScheme.bg.h,
+.bg.c7.h {
+  background-color: #008580;
+}
+.colorScheme.turquoise .colorScheme.bg.i,
+.bg.c7.i {
+  background-color: #00605d;
+}
+.colorScheme.turquoise .colorScheme.bg.j,
+.bg.c7.j {
+  background-color: #004240;
+}
+.colorScheme.midGreen .colorScheme.bg.a,
+.bg.c8.a {
+  background-color: #e2f5df;
+}
+.colorScheme.midGreen .colorScheme.bg.b,
+.bg.c8.b {
+  background-color: #c2f5b8;
+}
+.colorScheme.midGreen .colorScheme.bg.c,
+.bg.c8.c {
+  background-color: #90f098;
+}
+.colorScheme.midGreen .colorScheme.bg.d,
+.bg.c8.d {
+  background-color: #6de877;
+}
+.colorScheme.midGreen .colorScheme.bg.e,
+.bg.c8.e {
+  background-color: #27d945;
+}
+.colorScheme.midGreen .colorScheme.bg.f,
+.bg.c8.f {
+  background-color: #13ba2f;
+}
+.colorScheme.midGreen .colorScheme.bg.g,
+.bg.c8.g {
+  background-color: #109c27;
+}
+.colorScheme.midGreen .colorScheme.bg.h,
+.bg.c8.h {
+  background-color: #0b731d;
+}
+.colorScheme.midGreen .colorScheme.bg.i,
+.bg.c8.i {
+  background-color: #095916;
+}
+.colorScheme.midGreen .colorScheme.bg.j,
+.bg.c8.j {
+  background-color: #064010;
+}
+.colorScheme.lightGreen .colorScheme.bg.a,
+.bg.c9.a {
+  background-color: #ecf5d5;
+}
+.colorScheme.lightGreen .colorScheme.bg.b,
+.bg.c9.b {
+  background-color: #e1f5ab;
+}
+.colorScheme.lightGreen .colorScheme.bg.c,
+.bg.c9.c {
+  background-color: #d0f272;
+}
+.colorScheme.lightGreen .colorScheme.bg.d,
+.bg.c9.d {
+  background-color: #bfeb52;
+}
+.colorScheme.lightGreen .colorScheme.bg.e,
+.bg.c9.e {
+  background-color: #aad934;
+}
+.colorScheme.lightGreen .colorScheme.bg.f,
+.bg.c9.f {
+  background-color: #92c219;
+}
+.colorScheme.lightGreen .colorScheme.bg.g,
+.bg.c9.g {
+  background-color: #80ad0c;
+}
+.colorScheme.lightGreen .colorScheme.bg.h,
+.bg.c9.h {
+  background-color: #6a8f0e;
+}
+.colorScheme.lightGreen .colorScheme.bg.i,
+.bg.c9.i {
+  background-color: #4f6b09;
+}
+.colorScheme.lightGreen .colorScheme.bg.j,
+.bg.c9.j {
+  background-color: #294706;
+}
+.colorScheme.blueGreen .colorScheme.bg.a,
+.bg.c10.a {
+  background-color: #e1f0e9;
+}
+.colorScheme.blueGreen .colorScheme.bg.b,
+.bg.c10.b {
+  background-color: #beefd7;
+}
+.colorScheme.blueGreen .colorScheme.bg.c,
+.bg.c10.c {
+  background-color: #96e3be;
+}
+.colorScheme.blueGreen .colorScheme.bg.d,
+.bg.c10.d {
+  background-color: #76d6a8;
+}
+.colorScheme.blueGreen .colorScheme.bg.e,
+.bg.c10.e {
+  background-color: #55c28d;
+}
+.colorScheme.blueGreen .colorScheme.bg.f,
+.bg.c10.f {
+  background-color: #2cb070;
+}
+.colorScheme.blueGreen .colorScheme.bg.g,
+.bg.c10.g {
+  background-color: #24965f;
+}
+.colorScheme.blueGreen .colorScheme.bg.h,
+.bg.c10.h {
+  background-color: #016b3f;
+}
+.colorScheme.blueGreen .colorScheme.bg.i,
+.bg.c10.i {
+  background-color: #054c2e;
+}
+.colorScheme.blueGreen .colorScheme.bg.j,
+.bg.c10.j {
+  background-color: #032e1c;
+}
