@@ -1,0 +1,60 @@
+@import 'var-colorCodes';
+// Genrates a color scheme for a specific property.
+// pass class name, the shade (a-j), and the CSS property
+// 
+// TODO:
+// Pass a obejct to the arguments to do it for multiple properties. So we save a lot of CSS declarations
+// Like: .generate-property-colorScheme(@className, [[@shade, @css-property],[@shade, @css-property],[...]])
+
+.generate-property-colorScheme(@className, @shade, @css-property) {
+
+    .-(@i: 1) when (@i <= length(@color-names)) {
+        @name: e(extract(@color-names, @i));
+        @code: e(extract(@color-codes, @i));
+
+        @var-color-current: "@{code}-@{shade}";
+        .colorScheme.@{name} @{className} {
+            @{css-property}:  @@var-color-current;
+        }
+        .-((@i + 1));
+    } .-;
+}
+
+// Example:
+//
+// Use the mising like: .generate-property-colorScheme(~".myItem", ~"j", ~"border-left-color"); 
+// and it will generated:
+//
+//.colorScheme.gray .myItem {
+//    border-left-color: #91979b;
+//}
+//.colorScheme.yellow .myItem {
+//    border-left-color: #f49906;
+//}
+//.colorScheme.orange .myItem {
+//    border-left-color: #e36600;
+//}
+//.colorScheme.red .myItem {
+//    border-left-color: #bc111a;
+//}
+//.colorScheme.purple .myItem {
+//    border-left-color: #614aa5;
+//}
+//.colorScheme.midBlue .myItem {
+//    border-left-color: #165f9b;
+//}
+//.colorScheme.lightBlue .myItem {
+//    border-left-color: #0a86c4;
+//}
+//.colorScheme.turquoise .myItem {
+//    border-left-color: #04b0aa;
+//}
+//.colorScheme.midGreen .myItem {
+//    border-left-color: #109c27;
+//}
+//.colorScheme.lightGreen .myItem {
+//    border-left-color: #80ad0c;
+//}
+//.colorScheme.blueGreen .myItem {
+//    border-left-color: #24965f;
+//}
