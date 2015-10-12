@@ -20,6 +20,33 @@
     } .-;
 }
 
+.generateGradient (@start, @end) {
+    background: @start;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(@start), to(@end));
+    background: -webkit-linear-gradient(@start, @end);
+    background: -moz-linear-gradient(@start, @end);
+    background: -ms-linear-gradient(@start, @end);
+    background: -o-linear-gradient(@start, @end);
+    background: linear-gradient(@start, @end);
+
+}
+
+.generate-property-colorScheme-gradient(@className, @shadeFrom, @shadeTo) {
+
+    .-(@i: 1) when (@i <= length(@color-names)) {
+        @name: e(extract(@color-names, @i));
+        @code: e(extract(@color-codes, @i));
+    
+        @var-color-from: "@{code}-@{shadeFrom}";
+        @var-color-to: "@{code}-@{shadeTo}";
+    
+        .colorScheme.@{name} @{className} {
+            .generateGradient(@@var-color-from, @@var-color-to);
+        }
+        .-((@i + 1));
+    } .-;
+}
+
 // Example:
 //
 // Use the mising like: .generate-property-colorScheme(~".myItem", ~"j", ~"border-left-color"); 
