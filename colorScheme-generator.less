@@ -21,14 +21,12 @@
 }
 
 .generateGradient (@start, @end) {
-    background: @start;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(@start), to(@end));
-    background: -webkit-linear-gradient(@start, @end);
-    background: -moz-linear-gradient(@start, @end);
-    background: -ms-linear-gradient(@start, @end);
-    background: -o-linear-gradient(@start, @end);
-    background: linear-gradient(@start, @end);
-
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(@start), to(@end));
+    background-image: -webkit-linear-gradient(@start, @end);
+    background-image: -moz-linear-gradient(@start, @end);
+    background-image: -ms-linear-gradient(@start, @end);
+    background-image: -o-linear-gradient(@start, @end);
+    background-image: linear-gradient(@start, @end);
 }
 
 .generate-property-colorScheme-gradient(@className, @shadeFrom, @shadeTo) {
