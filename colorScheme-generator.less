@@ -6,6 +6,21 @@
 // Pass a obejct to the arguments to do it for multiple properties. So we save a lot of CSS declarations
 // Like: .generate-property-colorScheme(@className, [[@shade, @css-property],[@shade, @css-property],[...]])
 
+// use it in your class so it will extend your class path with the colorScheme definitions
+.generate-colorScheme(@shade, @css-property) {
+
+    .-(@i: 1) when (@i <= length(@color-names)) {
+        @name: e(extract(@color-names, @i));
+        @code: e(extract(@color-codes, @i));
+    
+        @var-color-current: "@{code}-@{shade}";
+        .colorScheme.@{name} & {
+            @{css-property}:  @@var-color-current;
+        }
+        .-((@i + 1));
+    } .-;
+}
+// pass the class name to generate the colorScheme for
 .generate-property-colorScheme(@className, @shade, @css-property) {
 
     .-(@i: 1) when (@i <= length(@color-names)) {
